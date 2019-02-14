@@ -2,21 +2,15 @@
 
 LibGDX, game engine written in Java. KTX, Kotlin DSL for LibDGX. 
 
-Third tutorial in the LibGDX series, adapted for Kotlin.
-https://libgdx.info/basic_action/
-https://libgdx.info/runnable-action/
+Seventh tutorial in the LibGDX series, adapted for Kotlin.
 
 ### About
 
-If you are attempting to learn more about Kotlin and LibGDX this is a great forth step, see previous solutions here: https://github.com/bajabob/libgdx-ktx-buttons. This tutorial aims to teach you about LibGDX actor actions and interacting with them using a button. 
+If you are attempting to learn more about Kotlin and LibGDX this guide should be helpful! See previous solutions here: https://github.com/bajabob/libgdx-ktx-actions. This tutorial aims to teach you how to switch screens in LibGDX. 
 
 ### Uses 
  
-* MoveByAction
-* RotateAction
-* ScaleByAction
-* SequenceAction
-* ParallelAction
+TODO
 
 ### Screenshot
 
