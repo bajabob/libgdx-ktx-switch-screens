@@ -1,23 +1,38 @@
-## Fonts and Labels 
+# Beat the high-score: build a game using libGDX and Kotlin
 
-LibGDX, game engine written in Java. KTX, Kotlin DSL for LibDGX. 
+Playing games is fun but making games is even better, especially with Kotlin and libGDX. Let's build together a breakout game and let's explore the gaming framework libGDX.
 
-Seventh tutorial in the LibGDX series, adapted for Kotlin.
+This session will show some libGDX's concepts: how to draw and animate elements of our game, how collision system works to destroy our bricks, what Kotlin brings to libGDX. Then we will dive into more advanced topics like shaders, in order to handle pixels from our images. Why are we doing all of this? To break the high score, of course!
 
-### About
+## How to build the game?
 
-If you are attempting to learn more about Kotlin and LibGDX this guide should be helpful! See previous solutions here: https://github.com/bajabob/libgdx-ktx-actions. This tutorial aims to teach you how to switch screens in LibGDX. 
+`./gradlew build`
 
-### Uses 
- 
-TODO
+## How to run the game?
 
-### Screenshot
+`./gradlew desktop:run`
 
-![screenshot of UI](_github/screenshot.png "Sample UI")
+## How to build the APK for Android?
 
-### How to Run
+Create a `keystore.properties` file in this directory:
+```
+storePassword=storePassword
+keyPassword=keyPassword
+keyAlias=keyAlias
+storeFile=storeFile.jks
+```
 
-Clone or download a zip of the project
+Create a `local.properties` file in this directory if you didn't have set `ANDROID_HOME`:
+```
+sdk.dir=<path to the android sdk>
+```
 
-From the root of the project, execute: `./gradlew :desktop:run`
+
+`./gradlew android:assembleRelease -PANDROID=true`
+
+Because the android plugin is a bit buggy with IntelliJ, Android project is enable only on demand, thanks
+to the parameter `ANDROID`
+
+## How to grab the game from Google Play Store?
+
+[Google Play Store page](https://play.google.com/store/apps/details?id=com.github.dwursteisen.beat)
