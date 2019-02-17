@@ -4,11 +4,10 @@ import ktx.app.KtxScreen
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.scenes.scene2d.Stage
-import com.badlogic.gdx.scenes.scene2d.ui.Label
-import com.badlogic.gdx.scenes.scene2d.ui.Skin
 import com.badlogic.gdx.utils.Align
 import com.badlogic.gdx.utils.viewport.ScreenViewport
-
+import ktx.scene2d.label
+import ktx.scene2d.table
 
 
 class TitleScreen: KtxScreen {
@@ -18,15 +17,15 @@ class TitleScreen: KtxScreen {
     override fun show() {
         super.show()
 
-        val gameSkin = Skin(Gdx.files.internal("skin/glassy-ui.json"));
-
-        val title = Label("Title Screen", gameSkin, "big-black")
-        title.setAlignment(Align.center)
-        title.setY(Gdx.graphics.height * 2 / 3f)
-        title.setWidth(Gdx.graphics.width.toFloat())
-        stage.addActor(title)
+        val root = table {
+            setFillParent(true)
+            label("hello world") {
+                setAlignment(Align.center)
+            }.cell(colspan = 2, fillX = true)
+        }
 
         Gdx.input.setInputProcessor(stage)
+        stage.addActor(root)
     }
 
 
