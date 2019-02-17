@@ -1,4 +1,4 @@
-package com.github.dwursteisen.beat
+package com.bajabob.ktx
 
 import android.os.Bundle
 import com.badlogic.gdx.backends.android.AndroidApplication
@@ -10,6 +10,6 @@ class AndroidLauncher : AndroidApplication() {
 
         val config = AndroidApplicationConfiguration()
         super.onCreate(savedInstanceState)
-        initialize(BeatTheHighScore(), config)
+        initialize(GameLauncher(), config)
     }
 }

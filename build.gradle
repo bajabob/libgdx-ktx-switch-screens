@@ -25,7 +25,7 @@ allprojects {
 
     version = '1.0'
     ext {
-        appName = "beat_the_high_score"
+        appName = "game_ktx"
         gdxVersion = '1.9.9-SNAPSHOT'
         roboVMVersion = '2.3.3'
         box2DLightsVersion = '1.4'
