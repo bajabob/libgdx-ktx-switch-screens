@@ -6,6 +6,10 @@
       <module name="beat-the-hs-libdgx-kotlin.core.test" target="1.6" />
       <module name="beat-the-hs-libdgx-kotlin.desktop.main" target="1.6" />
       <module name="beat-the-hs-libdgx-kotlin.desktop.test" target="1.6" />
+      <module name="libgdx-ktx-switch-screens.core.main" target="1.6" />
+      <module name="libgdx-ktx-switch-screens.core.test" target="1.6" />
+      <module name="libgdx-ktx-switch-screens.desktop.main" target="1.6" />
+      <module name="libgdx-ktx-switch-screens.desktop.test" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

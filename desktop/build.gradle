@@ -7,7 +7,7 @@ apply plugin: "com.github.dwursteisen.libgdx.aseprite.AsepritePlugin"
 sourceCompatibility = 1.6
 sourceSets.main.java.srcDirs = [ "src/" ]
 
-project.ext.mainClassName = "com.github.dwursteisen.beat.desktop.DesktopLauncher"
+project.ext.mainClassName = "com.bajabob.ktx.desktop.DesktopLauncher"
 project.ext.assetsDir = new File("../core/assets");
 
 task aseprite(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
