@@ -50,13 +50,13 @@ project(":desktop") {
     apply plugin: "kotlin"
 
     dependencies {
-        compile project(":core")
-        compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
-        compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
-        compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        implementation project(":core")
+        implementation "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 
-        compile "com.github.Anuken:GdxGifRecorder:$gdx_recorder"
+        implementation "com.github.Anuken:GdxGifRecorder:$gdx_recorder"
     }
 }
 
@@ -89,18 +89,29 @@ project(":core") {
     apply plugin: "kotlin"
 
     dependencies {
-        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
-        compile "com.badlogicgames.ashley:ashley:$ashleyVersion"
-        compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
-        compile "io.github.libktx:ktx-ashley:$ktxVersion"
-        compile "io.github.libktx:ktx-graphics:$ktxVersion"
-        compile "io.github.libktx:ktx-scene2d:$ktxVersion"
-        compile "io.github.libktx:ktx-log:$ktxVersion"
-        compile "org.apache.commons:commons-text:1.1"
-        compile "com.github.dwursteisen.libgdx-addons:aseprite-addons:$libgdx_addons"
-        compile "com.github.dwursteisen.libgdx-addons:ashley-addons:$libgdx_addons"
-        compile "com.github.dwursteisen.libgdx-addons:core-addons:$libgdx_addons"
+        api "io.github.libktx:ktx-scene2d:$ktxVersion"
+        api "io.github.libktx:ktx-async:$ktxVersion"
+        api "io.github.libktx:ktx-box2d:$ktxVersion"
+        api "io.github.libktx:ktx-inject:$ktxVersion"
+        api "io.github.libktx:ktx-app:$ktxVersion"
+        api "io.github.libktx:ktx-math:$ktxVersion"
+        api "io.github.libktx:ktx-assets:$ktxVersion"
+        api "io.github.libktx:ktx-i18n:$ktxVersion"
+        api "io.github.libktx:ktx-actors:$ktxVersion"
+        api "io.github.libktx:ktx-collections:$ktxVersion"
+        api "io.github.libktx:ktx-style:$ktxVersion"
+        api "com.badlogicgames.gdx:gdx:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        api "com.badlogicgames.ashley:ashley:$ashleyVersion"
+        api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        api "io.github.libktx:ktx-ashley:$ktxVersion"
+        api "io.github.libktx:ktx-graphics:$ktxVersion"
+        api "io.github.libktx:ktx-scene2d:$ktxVersion"
+        api "io.github.libktx:ktx-log:$ktxVersion"
+        api "org.apache.commons:commons-text:1.1"
+        api "com.github.dwursteisen.libgdx-addons:aseprite-addons:$libgdx_addons"
+        api "com.github.dwursteisen.libgdx-addons:ashley-addons:$libgdx_addons"
+        api "com.github.dwursteisen.libgdx-addons:core-addons:$libgdx_addons"
     }
 }
 

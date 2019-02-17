@@ -1,17 +1,22 @@
 package com.bajabob.ktx
 
-import com.badlogic.gdx.Game
+import ktx.app.KtxGame
+import ktx.app.KtxScreen
 
-open class GameLauncher : Game() {
+class GameLauncher : KtxGame<KtxScreen>() {
 
     override fun create() {
+        super.create()
 
+        addScreen(TitleScreen())
+        setScreen<TitleScreen>()
     }
 
     override fun render() {
-
+        super.render()
     }
 
     override fun dispose() {
+        super.dispose()
     }
 }
