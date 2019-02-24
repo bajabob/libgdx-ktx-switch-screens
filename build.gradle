@@ -31,7 +31,7 @@ allprojects {
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.3'
         aiVersion = '1.8.1'
-        ktxVersion = '1.9.8-b3'
+        ktxVersion = '1.9.9-b1'
         gdx_recorder = 'fa56b71fe5'
     }
 

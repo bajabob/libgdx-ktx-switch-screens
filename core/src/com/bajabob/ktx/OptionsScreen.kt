@@ -12,7 +12,7 @@ import ktx.scene2d.table
 import ktx.scene2d.textButton
 
 
-class TitleScreen: KtxScreen {
+class OptionsScreen: KtxScreen {
 
     private val screenWidth = Gdx.graphics.width.toFloat()
     private val screenHeight = Gdx.graphics.height.toFloat()
@@ -22,11 +22,10 @@ class TitleScreen: KtxScreen {
         super.show()
 
         val root = table {
-            textButton(text = "Options Screen").onClick {
-                info { "Options screen button clicked" }
-                GameLauncher.game.nextScreen("options")
+            textButton(text = "Title Screen").onClick {
+                info { "Title screen clicked" }
+                GameLauncher.game.nextScreen("title")
             }
-
             // Packing the root window:
             pack()
         }
@@ -36,7 +35,7 @@ class TitleScreen: KtxScreen {
         Gdx.input.setInputProcessor(stage)
         stage.addActor(root)
     }
-    
+
     override fun render(delta: Float) {
         super.render(delta)
         Gdx.gl.glClearColor(0f, 0f, 1f, 1f)
